@@ -2,6 +2,7 @@ function addtask(){
 
     const dislist = document.getElementById("list");
 
+    const endate = document.getElementById("datein").value;
     const entime = document.getElementById("timein").value;
     const entask = document.getElementById("taskin").value.trim();
 
@@ -16,7 +17,7 @@ function addtask(){
     const show = document.createElement("div");
           show.className = "display";
 
-          show.innerText = `${entime} - ${entask}`;
+          show.innerHTML = ` <=== ${endate} ===> <br> ${entime} - ${entask}`;
 
     const controls = document.createElement("div");
           controls.className = "control";
