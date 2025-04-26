@@ -25,7 +25,6 @@ function addtask(){
     const ok = document.createElement("button");
           ok.className = "done";
           ok.innerText = "COMPLETE";
-          ok.style.color = "rgb(63, 113, 63)";
 
           ok.onclick = () => { 
             if(ok.innerText === "COMPLETE"){
