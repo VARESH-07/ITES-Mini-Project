@@ -81,7 +81,10 @@ body{
 }
 
 .done:hover{
-    width: 175px;
+    font-style: italic;
+    font-weight: 900;
+    letter-spacing: 1px;
+    font-family: Impact;
     border-radius: 25px;
     background-color: rgb(91, 156, 91);
     color: white;
@@ -101,7 +104,10 @@ body{
 }
 
 .edit:hover{
-    width: 175px;
+    font-style: italic;
+    font-weight: 900;
+    letter-spacing: 1px;
+    font-family: Impact;
     border-radius: 25px;
     background-color: rgb(196, 147, 94);
     color:white;
@@ -121,7 +127,10 @@ body{
 }
 
 .nope:hover{
-    width: 175px;
+    font-style: italic;
+    font-weight: 900;
+    letter-spacing: 1px;
+    font-family: Impact;
     border-radius: 25px;
     background-color: rgb(196, 94, 94);
     color:white;
