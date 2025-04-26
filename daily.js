@@ -76,6 +76,8 @@ function addtask(){
 
               dislist.appendChild(numtasks);
 
+
+document.getElementById("datein").value="";
         document.getElementById("timein").value="";
         document.getElementById("taskin").value=""
 }
