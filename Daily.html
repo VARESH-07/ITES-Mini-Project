@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="daily.css">
+    <title>Daily Planner</title>
+</head>
+<body>
+
+    <div class="box">
+        <h1><em>DAILY PLANNER</em></h1><br><br>
+    
+        <div class="inbox">
+        <label class="time">TIME</label><br>
+        <input type="time" id="timein"><br>
+
+        <label class="task">TASK</label><br>
+        <input type="text" id="taskin"><br>
+
+        <button onclick="addtask()" class="taskadd">+</button>
+
+             <div id="list"></div>
+        </div>
+    </div>
+           <script src="daily.js"></script>
+</body>
+</html>
