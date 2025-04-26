@@ -30,7 +30,7 @@ function addtask(){
           ok.onclick = () => { 
             if(ok.innerText === "COMPLETE"){
             ok.innerText = "COMPLETED";
-            ok.style.backgroundColor = "rgb(91, 156, 91";
+            ok.style.backgroundColor = "rgb(91, 156, 91)";
             ok.style.color = "white";
             }
             else if(ok.innerText === "COMPLETED"){
