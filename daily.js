@@ -7,7 +7,7 @@ function addtask(){
     const entask = document.getElementById("taskin").value.trim();
 
   if(!entime){
-    alert("ENTER THE TIME");
+    alert("Enter Time : ");
    return;
   }
     
