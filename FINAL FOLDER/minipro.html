@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="minipro.css">
+    <title>Daily Planner</title>
+</head>
+<body>
+    <button id="dark"><a href="darkdaily.html">DARK MODE</a></button>
+
+    <div class="box">
+        <h1><em>DAILY PLANNER</em></h1><br><br>
+    
+        <div class="inbox">
+            <lable class="lab">DATE</lable><br>
+            <input type="date" id="datein"><br><br>
+
+           <lable class="lab">TIME</lable><br>
+           <input type="time" id="timein"><br><br>
+        
+
+           <lable class="lab">TASK</lable><br>
+           <input type="text" id="taskin"><br><br>
+        
+
+        <button onclick="addtask()" class="taskadd">+</button>
+
+             <div id="list"></div>
+        </div>
+    </div>
+           <script src="minipro.js"></script>
+</body>
+</html>
