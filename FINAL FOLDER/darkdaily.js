@@ -1,4 +1,7 @@
     const date = document.getElementById("datein");
+    const day = document.getElementById("datein");
+          day.value = new Date().toISOString().split("T")[0];
+
     const time = document.getElementById("timein");
     const task = document.getElementById("taskin");
 
