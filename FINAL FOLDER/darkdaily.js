@@ -111,7 +111,7 @@ function addtask(){
 
               dislist.appendChild(numtasks);
 
-        document.getElementById("datein").value="";
+        document.getElementById("datein").value=new Date().toISOString().split("T")[0];
         document.getElementById("timein").value="";
         document.getElementById("taskin").value=""
 }
