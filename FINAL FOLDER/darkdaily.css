@@ -3,6 +3,7 @@ body{
     padding-bottom: 3.125em;
     background-color: black;
     align-items: center;
+    cursor: cell;
 }
 
 h1{
@@ -79,6 +80,7 @@ p{
     text-decoration: none;
     border-radius: 0.9375em;
     align-self: right;
+    cursor: cell;
 }
 
 #light:hover{
@@ -97,12 +99,14 @@ a{
     color: white;
     text-decoration: none;
     letter-spacing: 0.125em;
+    cursor: cell;
 }
 
 a:hover{
     color: black;
     text-decoration: none;
     letter-spacing: 0.5em;
+    cursor: cell;
 }
 
 .lab{
@@ -160,6 +164,7 @@ input{
     background-color: transparent;
     border: 2px solid white;
     outline: none;
+    cursor: cell;
 }
 
 .taskadd{
@@ -172,6 +177,7 @@ input{
     margin-top: 1.875em;
     border: 0.09375em outset rgb(255, 242, 0);
     margin-bottom: 1.5625em;
+    cursor: cell;
     border-radius: 1.5625em;
 }
 
@@ -184,6 +190,7 @@ input{
     -webkit-text-fill-color: greenyellow;
     background-color: black;
     color: transparent;
+    cursor: cell;
     border: 0.09375em inset rgb(90, 255, 7);
     font-size: 1.875em;
     font-weight: 700;
@@ -234,6 +241,7 @@ input{
     font-family: monospace;
     letter-spacing: 0.0625em;
     font-weight: 500;
+    cursor: cell;
     margin-bottom: 0.625em;
     font-size: 0.9375em;
 }
@@ -248,6 +256,7 @@ input{
     background-color: greenyellow;
     color: black;
     border: 1px solid black;
+    cursor: cell;
     font-weight: 500;
     font-size: 0.9375em;
 }
@@ -263,6 +272,7 @@ input{
     margin-bottom: 0.625em;
     font-weight: 500;
     font-size: 0.9375em;
+    cursor: cell;
 }
 
 .edit:hover{
@@ -276,6 +286,7 @@ input{
     color: black;
     border: 1px solid black;
     font-weight: 500;
+    cursor: cell;
     font-size: 0.9375em;
 }
 
@@ -288,6 +299,7 @@ input{
     font-family: monospace;
     letter-spacing: 0.0625em;
     margin-bottom: 0.625em;
+    cursor: cell;
     font-weight: 500;
     font-size: 0.9375em;
 }
@@ -303,5 +315,6 @@ input{
     color: black;
     border: 1px solid black;
     font-weight: 500;
+    cursor: cell;
     font-size: 0.9375em;
 }
