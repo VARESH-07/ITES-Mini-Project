@@ -1,6 +1,31 @@
     const endatee = document.getElementById("datein");
     const today = new Date().toISOString().split("T")[0];
           endatee.setAttribute("min", today);
+
+          const date = document.getElementById("datein");
+          const time = document.getElementById("timein");
+          const task = document.getElementById("taskin");
+      
+                date.addEventListener("keydown",function(e){
+                  if(e.key == "Enter"){
+                    e.preventDefault();
+                    time.focus();
+                  }
+                });
+      
+                time.addEventListener("keydown",function(e){
+                  if(e.key == "Enter"){
+                    e.preventDefault();
+                    task.focus();
+                  }
+                });
+      
+                task.addEventListener("keydown",function(e){
+                  if(e.key == "Enter"){
+                    e.preventDefault();
+                    addtask();
+                  }
+                })      
  
 function addtask(){
 
