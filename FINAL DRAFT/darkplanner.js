@@ -29,7 +29,7 @@
               e.preventDefault();
               addtask();
             }
-          })
+          });
 
 function themechange() {
   if(the.innerText === "LIGHT MODE"){
@@ -107,13 +107,11 @@ function addtask(){
           ok.onclick = () => { 
             if(ok.innerText === "COMPLETE"){
             ok.innerText = "COMPLETED";
-            ok.style.backgroundColor = "yellowgreen";
-            ok.style.color = "black";
+            ok.classList.toggle("redone");
             }
             else if(ok.innerText === "COMPLETED"){
             ok.innerText = "COMPLETE";
-            ok.style.color = "yellowgreen";
-            ok.style.backgroundColor = "black";
+            ok.classList.toggle("undone");
             }
         }
 
@@ -124,10 +122,11 @@ function addtask(){
                 const[oldtime,...taskwords] = show.innerText.split(" - ");
                 const oldtask = taskwords.join(" - ");
 
+                const newtime = prompt("Edit Time:",oldtime);
                 const newtask = prompt("Edit Task:",oldtask);
 
             if(newtask){
-                show.innerText = `${oldtime} - ${newtask}`;
+                show.innerText = `${newtime} - ${newtask}`;
             }
           };  
 
@@ -170,5 +169,5 @@ function addtask(){
 
         document.getElementById("datein").value=new Date().toISOString().split("T")[0];
         document.getElementById("timein").value="";
-        document.getElementById("taskin").value=""
+        document.getElementById("taskin").value="";
 }
