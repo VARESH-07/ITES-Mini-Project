@@ -1,3 +1,29 @@
+    const date = document.getElementById("datein");
+    const time = document.getElementById("timein");
+    const task = document.getElementById("taskin");
+
+          date.addEventListener("keydown",function(e){
+            if(e.key == "Enter"){
+              e.preventDefault();
+              time.focus();
+            }
+          });
+
+          time.addEventListener("keydown",function(e){
+            if(e.key == "Enter"){
+              e.preventDefault();
+              task.focus();
+            }
+          });
+
+          task.addEventListener("keydown",function(e){
+            if(e.key == "Enter"){
+              e.preventDefault();
+              addtask();
+            }
+          })
+
+
 function addtask(){
 
     const dislist = document.getElementById("list");
