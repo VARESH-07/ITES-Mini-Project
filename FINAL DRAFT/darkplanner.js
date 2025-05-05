@@ -121,8 +121,6 @@ function addtask(){
           old.onclick = () =>  {
                 const[oldtime,...taskwords] = show.innerText.split(" - ");
                 const oldtask = taskwords.join(" - ");
-
-                const newtime = prompt("Edit Time:",oldtime);
                 const newtask = prompt("Edit Task:",oldtask);
 
             if(newtask){
