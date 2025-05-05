@@ -271,6 +271,20 @@ input{
     cursor: cell;
 }
 
+input:hover{
+    width: 75%;
+    border-right: 12.5%;
+    border-left: 12.5%;
+    height: 3.125em;
+    text-align: center;
+    border-radius: 0.9375em;
+    color: white;
+    background-color: transparent;
+    border: 2px dotted ghostwhite;
+    outline: none;
+    cursor: cell;
+}
+
 input.lightheme{
     width: 75%;
     border-right: 12.5%;
@@ -315,10 +329,10 @@ input.lightheme:hover{
 
 .taskadd.lightheme{
     width: 50%;
-    background-color: rgb(227, 253, 235);
+    background-color: rgb(190, 246, 255);
     color: transparent;
-    -webkit-text-stroke: 0.005em black;
-    -webkit-text-fill-color: black;
+    -webkit-text-stroke: 0.025em black;
+    -webkit-text-fill-color: white;
     font-size: 1.875em;
     font-weight: 700;
     margin-top: 1.875em;
@@ -333,7 +347,7 @@ input.lightheme:hover{
     margin-left: 24%;
     margin-right: 24%;
     color: yellowgreen;
-    -webkit-text-stroke: 0.0625em greenyellow;
+    -webkit-text-stroke: 0.0625em black;
     -webkit-text-fill-color: greenyellow;
     background-color: black;
     color: transparent;
