@@ -81,11 +81,25 @@ function addtask(){
     const entime = document.getElementById("timein").value;
     const entask = document.getElementById("taskin").value.trim();
 
-  if(endate < today){
-    alert("ENTER FUTURE TASKS!");
-    document.getElementById("datein").value="";
-   return;
-  }
+    let[hour,minute] = entime.split(":");
+    hour = parseInt(hour);
+ 
+    let m = hour >= 12 ? "PM":"AM";
+
+          if(hour > 12){
+             hour -= 12;
+          }
+          else if(hour == 0){
+             hour = 12;
+          }
+
+    const actualtime = hour + ":" + minute + " " + m;
+
+          if(endate < today){
+            alert("ENTER FUTURE TASKS!");
+            document.getElementById("datein").value="";
+            return;
+          }
 
   if(!entime){
     alert("Enter Time : ");
@@ -96,7 +110,7 @@ function addtask(){
 
     const show = document.createElement("div");
 
-          show.innerHTML = ` <=== ${endate} ===> <br> ${entime} - ${entask}`;
+          show.innerHTML = ` <=== ${endate} ===> <br> ${actualtime} - ${entask}`;
 
     const controls = document.createElement("div");
           controls.className = "control";
